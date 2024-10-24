@@ -18,6 +18,7 @@ neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 neopixleStrip.show()
 basic.showIcon(IconNames.Happy)
 
+//taking distance and terning red if 9 cm or less and green if 10 or more
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 
@@ -35,14 +36,13 @@ input.onButtonPressed(Button.A, function () {
         neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
-        neopixleStrip.show()
     } else {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
         neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
         neopixleStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
         neopixleStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
         neopixleStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
-        neopixleStrip.show()
     }
+    neopixleStrip.show()
     basic.showIcon(IconNames.Happy)
 })
