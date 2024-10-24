@@ -29,7 +29,6 @@ input.onButtonPressed(Button.A, function () {
     )
 
     //terning red if 9 cm or less and green if 10 or more
-    basic.showNumber(distanceToObject)
     if (distanceToObject < 10) {
         neopixleStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
         neopixleStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
