@@ -1,8 +1,8 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Elliott Roach
+ * Created on: oct 2024
+ * This program senses distance and terns red if to close
 */
 
-basic.showString('Hello, World!')
+
